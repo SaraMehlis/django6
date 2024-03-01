@@ -20,6 +20,7 @@ def about_me(request):
                 request, messages.SUCCESS,
                 'Collaboration request received! I endeavor to respond within 2 working days.'
             )
+            # return HttpResponseRedirect(request.path.info) joseph suggestion
             collaborate_form = CollaborateForm()
         else:
             collaborate_form = CollaborateForm()
